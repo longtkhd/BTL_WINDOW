@@ -1,0 +1,4 @@
+E:\dephong\doan\SieuThi\app\QuanLySieuThi\DTO\bin\Debug\DTO.dll
+E:\dephong\doan\SieuThi\app\QuanLySieuThi\DTO\bin\Debug\DTO.pdb
+E:\dephong\doan\SieuThi\app\QuanLySieuThi\DTO\obj\Debug\DTO.dll
+E:\dephong\doan\SieuThi\app\QuanLySieuThi\DTO\obj\Debug\DTO.pdb

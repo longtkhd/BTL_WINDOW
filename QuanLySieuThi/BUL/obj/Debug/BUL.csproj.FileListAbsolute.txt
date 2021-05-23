@@ -1,0 +1,9 @@
+E:\dephong\doan\SieuThi\app\QuanLySieuThi\BUL\bin\Debug\BUL.dll
+E:\dephong\doan\SieuThi\app\QuanLySieuThi\BUL\bin\Debug\BUL.pdb
+E:\dephong\doan\SieuThi\app\QuanLySieuThi\BUL\obj\Debug\BUL.dll
+E:\dephong\doan\SieuThi\app\QuanLySieuThi\BUL\obj\Debug\BUL.pdb
+E:\dephong\doan\SieuThi\app\QuanLySieuThi\BUL\bin\Debug\DAL.dll
+E:\dephong\doan\SieuThi\app\QuanLySieuThi\BUL\bin\Debug\DTO.dll
+E:\dephong\doan\SieuThi\app\QuanLySieuThi\BUL\bin\Debug\DAL.pdb
+E:\dephong\doan\SieuThi\app\QuanLySieuThi\BUL\bin\Debug\DTO.pdb
+E:\dephong\doan\SieuThi\app\QuanLySieuThi\BUL\obj\Debug\BUL.csprojResolveAssemblyReference.cache
