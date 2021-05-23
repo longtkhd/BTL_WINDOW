@@ -1,0 +1,10 @@
+E:\dephong\doan\SieuThi\app\QuanLySieuThi\DTO\bin\Debug\DTO.dll
+E:\dephong\doan\SieuThi\app\QuanLySieuThi\DTO\bin\Debug\DTO.pdb
+E:\dephong\doan\SieuThi\app\QuanLySieuThi\DTO\obj\Debug\DTO.dll
+E:\dephong\doan\SieuThi\app\QuanLySieuThi\DTO\obj\Debug\DTO.pdb
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\DTO\bin\Debug\DTO.dll
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\DTO\bin\Debug\DTO.pdb
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\DTO\obj\Debug\DTO.dll
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\DTO\obj\Debug\DTO.pdb
