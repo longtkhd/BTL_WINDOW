@@ -15,7 +15,7 @@ namespace QuanLiNhaHang
 {
     public partial class frmDangNhap : Form
     {
-        frmSieuThi frmST;
+        frmNhaHang frmST;
         public frmDangNhap()
         {
             InitializeComponent();
@@ -30,8 +30,8 @@ namespace QuanLiNhaHang
             {
                
                 BULNhanVien bulNV = new BULNhanVien();
-                frmSieuThi.nv = bulNV.layNhanVienTheoTaiKhoan(txtTaiKhoan.Text);
-                frmSieuThi.tk = bul.layTaiKhoanTheoTenTK(txtTaiKhoan.Text)[0];
+                frmNhaHang.nv = bulNV.layNhanVienTheoTaiKhoan(txtTaiKhoan.Text);
+                frmNhaHang.tk = bul.layTaiKhoanTheoTenTK(txtTaiKhoan.Text)[0];
                 frmST.Show();
                 this.Visible = false;
             }
@@ -43,7 +43,7 @@ namespace QuanLiNhaHang
 
         private void frmDangNhap_Load(object sender, EventArgs e)
         {
-            frmST = new frmSieuThi();
+            frmST = new frmNhaHang();
         }
     }
 }

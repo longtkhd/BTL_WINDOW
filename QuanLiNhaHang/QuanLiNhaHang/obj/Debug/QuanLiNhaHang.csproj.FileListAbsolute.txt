@@ -12,7 +12,6 @@ D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csp
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.frmChiTietHoaDon.resources
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.frmDangNhap.resources
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.frmHoaDon.resources
-D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.frmSieuThi.resources
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.frmSuaHang.resources
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.frmSuaKhachHang.resources
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.frmSuaLoaiHang.resources
@@ -37,3 +36,4 @@ D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csp
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csproj.CopyComplete
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.exe
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.pdb
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.frmNhaHang.resources

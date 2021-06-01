@@ -13,11 +13,11 @@ using Microsoft.Reporting.WinForms;
 
 namespace QuanLiNhaHang
 {
-    public partial class frmSieuThi : Form
+    public partial class frmNhaHang : Form
     {
         public static NhanVien nv;
         public static TaiKhoan tk;
-        public frmSieuThi()
+        public frmNhaHang()
         {
             InitializeComponent();
         }

@@ -14,8 +14,8 @@ namespace QuanLiNhaHang
 {
     public partial class frmXoaNhanVien : Form
     {
-        frmSieuThi frmST;
-        public frmXoaNhanVien(frmSieuThi frm)
+        frmNhaHang frmST;
+        public frmXoaNhanVien(frmNhaHang frm)
         {
             InitializeComponent();
             this.frmST = frm;
@@ -35,7 +35,7 @@ namespace QuanLiNhaHang
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            if (txtMaNhanVien.Text == frmSieuThi.nv.MaNhanVien +"")
+            if (txtMaNhanVien.Text == frmNhaHang.nv.MaNhanVien +"")
             {
                 MessageBox.Show("Thao tác thất bạt, không được xóa chính bạn", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
 

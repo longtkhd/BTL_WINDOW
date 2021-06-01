@@ -80,11 +80,11 @@
     <Compile Include="frmHoaDon.Designer.cs">
       <DependentUpon>frmHoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSieuThi.cs">
+    <Compile Include="frmNhaHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSieuThi.Designer.cs">
-      <DependentUpon>frmSieuThi.cs</DependentUpon>
+    <Compile Include="frmNhaHang.Designer.cs">
+      <DependentUpon>frmNhaHang.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSuaHang.cs">
       <SubType>Form</SubType>
@@ -205,8 +205,8 @@
     <EmbeddedResource Include="frmHoaDon.resx">
       <DependentUpon>frmHoaDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSieuThi.resx">
-      <DependentUpon>frmSieuThi.cs</DependentUpon>
+    <EmbeddedResource Include="frmNhaHang.resx">
+      <DependentUpon>frmNhaHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSuaHang.resx">
       <DependentUpon>frmSuaHang.cs</DependentUpon>

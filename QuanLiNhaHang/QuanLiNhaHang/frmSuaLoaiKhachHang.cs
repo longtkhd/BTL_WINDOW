@@ -15,8 +15,8 @@ namespace QuanLiNhaHang
 {
     public partial class frmSuaLoaiKhachHang : Form
     {
-        frmSieuThi frmST;
-        public frmSuaLoaiKhachHang(frmSieuThi frm)
+        frmNhaHang frmST;
+        public frmSuaLoaiKhachHang(frmNhaHang frm)
         {
             InitializeComponent();
             this.frmST = frm;

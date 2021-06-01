@@ -15,8 +15,8 @@ namespace QuanLiNhaHang
 {
     public partial class frmHoaDon : Form
     {
-        frmSieuThi frmST;
-        public frmHoaDon(frmSieuThi frm)
+        frmNhaHang frmST;
+        public frmHoaDon(frmNhaHang frm)
         {
             InitializeComponent();
             this.frmST = frm;
@@ -117,7 +117,7 @@ namespace QuanLiNhaHang
         private void frmHoaDon_Load(object sender, EventArgs e)
         {
             txtNgayTao.Text = DateTime.Now.ToString("dd/MM/yyyy");
-            txtMaNhanVien.Text = frmSieuThi.nv.MaNhanVien +"";
+            txtMaNhanVien.Text = frmNhaHang.nv.MaNhanVien +"";
         }
 
         private void btnTaoHoaDon_Click(object sender, EventArgs e)
