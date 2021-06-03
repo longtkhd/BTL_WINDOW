@@ -37,3 +37,4 @@ D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csp
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.exe
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.pdb
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.frmNhaHang.resources
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\bin\Debug\DevComponents.DotNetBar2.dll

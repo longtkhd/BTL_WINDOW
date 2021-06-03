@@ -22,7 +22,7 @@ namespace QuanLiNhaHang
             InitializeComponent();
         }
 
-        private void frmSieuThi_Load(object sender, EventArgs e)
+        private void frmNhaHang_Load(object sender, EventArgs e)
         {
          
             if (tk != null)
@@ -58,8 +58,8 @@ namespace QuanLiNhaHang
         {
             BULLoaiKhachHang bul = new BULLoaiKhachHang();
             dgvLoaiKhachHang.DataSource = bul.layLoaiKhachHang();
-            dgvLoaiKhachHang.Columns[0].HeaderText = "Mã loại khách hàng";
-            dgvLoaiKhachHang.Columns[1].HeaderText = "Tên loại khách hàng";
+            //dgvLoaiKhachHang.Columns[0].HeaderText = "Mã loại khách hàng";
+            //dgvLoaiKhachHang.Columns[1].HeaderText = "Tên loại khách hàng";
         }
         public void hienDanhSachNhaCungCap()
         {
@@ -308,7 +308,7 @@ namespace QuanLiNhaHang
             tiHoaDon.Visible = false;
             tiKhachHang.Visible = false;
             tiLoaiHang.Visible = false;
-            tiLoaiKhachHang.Visible = false;
+            //tiLoaiKhachHang.Visible = false;
             tiNCC.Visible = true;
             tiNhanVien.Visible = false;
             tiChiTietHoaDon.Visible = false;
@@ -320,7 +320,7 @@ namespace QuanLiNhaHang
             tiHoaDon.Visible = false;
             tiKhachHang.Visible = false;
             tiLoaiHang.Visible = false;
-            tiLoaiKhachHang.Visible = false;
+            //tiLoaiKhachHang.Visible = false;
             tiNCC.Visible = false;
             tiNhanVien.Visible = true;
             tiChiTietHoaDon.Visible = false;
@@ -333,7 +333,7 @@ namespace QuanLiNhaHang
             tiHoaDon.Visible = false;
             tiKhachHang.Visible = false;
             tiLoaiHang.Visible = false;
-            tiLoaiKhachHang.Visible = false;
+            //tiLoaiKhachHang.Visible = false;
             tiNCC.Visible = false;
             tiNhanVien.Visible = false;
             tiChiTietHoaDon.Visible = false;
@@ -346,7 +346,7 @@ namespace QuanLiNhaHang
             tiHoaDon.Visible = false;
             tiKhachHang.Visible = false;
             tiLoaiHang.Visible = true;
-            tiLoaiKhachHang.Visible = false;
+            //tiLoaiKhachHang.Visible = false;
             tiNCC.Visible = false;
             tiNhanVien.Visible = false;
             tiChiTietHoaDon.Visible = false;
@@ -359,7 +359,7 @@ namespace QuanLiNhaHang
             tiHoaDon.Visible = false;
             tiKhachHang.Visible = true;
             tiLoaiHang.Visible = false;
-            tiLoaiKhachHang.Visible = false;
+            //tiLoaiKhachHang.Visible = false;
             tiNCC.Visible = false;
             tiNhanVien.Visible = false;
             tiChiTietHoaDon.Visible = false;
@@ -378,7 +378,7 @@ namespace QuanLiNhaHang
             tiHoaDon.Visible = true;
             tiKhachHang.Visible = false;
             tiLoaiHang.Visible = false;
-            tiLoaiKhachHang.Visible = false;
+            //tiLoaiKhachHang.Visible = false;
             tiNCC.Visible = false;
             tiNhanVien.Visible = false;
             tiChiTietHoaDon.Visible = false;
@@ -391,7 +391,7 @@ namespace QuanLiNhaHang
             tiHoaDon.Visible = false;
             tiKhachHang.Visible = false;
             tiLoaiHang.Visible = false;
-            tiLoaiKhachHang.Visible = false;
+            //tiLoaiKhachHang.Visible = false;
             tiNCC.Visible = false;
             tiNhanVien.Visible = false;
             tiChiTietHoaDon.Visible = false;
@@ -404,7 +404,7 @@ namespace QuanLiNhaHang
             tiHoaDon.Visible = false;
             tiKhachHang.Visible = false;
             tiLoaiHang.Visible = false;
-            tiLoaiKhachHang.Visible = false;
+            //tiLoaiKhachHang.Visible = false;
             tiNCC.Visible = false;
             tiNhanVien.Visible = false;
             tiChiTietHoaDon.Visible = false;
@@ -417,7 +417,7 @@ namespace QuanLiNhaHang
             tiHoaDon.Visible = false;
             tiKhachHang.Visible = false;
             tiLoaiHang.Visible = false;
-            tiLoaiKhachHang.Visible = false;
+            //tiLoaiKhachHang.Visible = false;
             tiNCC.Visible = false;
             tiNhanVien.Visible = false;
             tiChiTietHoaDon.Visible = false;
@@ -540,7 +540,7 @@ namespace QuanLiNhaHang
             tiHoaDon.Visible = false;
             tiKhachHang.Visible = false;
             tiLoaiHang.Visible = false;
-            tiLoaiKhachHang.Visible = false;
+            //tiLoaiKhachHang.Visible = false;
             tiNCC.Visible = false;
             tiNhanVien.Visible = false;
             tiChiTietHoaDon.Visible = true;
@@ -549,6 +549,21 @@ namespace QuanLiNhaHang
         private void frmSieuThi_FormClosed(object sender, FormClosedEventArgs e)
         {
             Environment.Exit(1);
+        }
+
+        private void dgvNhaCungCap_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panelEx1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvChiTiet_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

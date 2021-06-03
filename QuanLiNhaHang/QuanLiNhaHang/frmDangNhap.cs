@@ -45,5 +45,10 @@ namespace QuanLiNhaHang
         {
             frmST = new frmNhaHang();
         }
+
+        private void labelX3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

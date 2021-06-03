@@ -84,6 +84,7 @@
             // 
             this.cbLoaiHang.DisplayMember = "Text";
             this.cbLoaiHang.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbLoaiHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbLoaiHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cbLoaiHang.FormattingEnabled = true;
             this.cbLoaiHang.ItemHeight = 20;
@@ -98,6 +99,7 @@
             // 
             this.cbNCC.DisplayMember = "Text";
             this.cbNCC.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbNCC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cbNCC.FormattingEnabled = true;
             this.cbNCC.ItemHeight = 20;

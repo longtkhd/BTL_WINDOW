@@ -32,5 +32,15 @@ namespace QuanLiNhaHang.Properties {
                 return ((string)(this["CSDLSieuThiConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=CSDLNhaHang;Integrated Security=True")]
+        public string CSDLNhaHangConnectionString {
+            get {
+                return ((string)(this["CSDLNhaHangConnectionString"]));
+            }
+        }
     }
 }
