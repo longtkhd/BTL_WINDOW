@@ -11,21 +11,32 @@ namespace DAL
 {
     public class DALHang
     {
+        DatabaseDataContext db = new DatabaseDataContext();
         public List<Hang> layHang()
         {
             List<Hang> arr = new List<Hang>();
 
-        
-            Connect.openConnect();
-            string query = "select * from Hang";
-            SqlCommand cmd = new SqlCommand(query, Connect.connect);
-            SqlDataReader dr = cmd.ExecuteReader();
-            while (dr.Read())
+
+            //Connect.openConnect();
+            //string query = "select * from Hang";
+            //SqlCommand cmd = new SqlCommand(query, Connect.connect);
+            //SqlDataReader dr = cmd.ExecuteReader();
+            //while (dr.Read())
+            //{
+            //    Hang x = new Hang(int.Parse(dr["maHang"] + ""), dr["tenHang"] + "", dr["donViTinh"] 
+            //+ "",float.Parse(dr["donGia"] + ""),int.Parse(dr["soLuongCon"] + ""),int.Parse(dr["maLoaiHang"] + ""), int.Parse(dr["maNhaCungCap"]
+            //+ "")  );
+            //    arr.Add(x);
+            //}
+            //Connect.closeConnect();
+
+            var hs = from x in db.HangLinqs
+                     select new { x.maHang, x.tenHang, x.donViTinh, x.donGia, x.soLuongCon, x.maLoaiHang, x.maNhaCungCap };
+            foreach(var x in hs)
             {
-                Hang x = new Hang(int.Parse(dr["maHang"] + ""), dr["tenHang"] + "", dr["donViTinh"] + "",float.Parse(dr["donGia"] + ""),int.Parse(dr["soLuongCon"] + ""),int.Parse(dr["maLoaiHang"] + ""), int.Parse(dr["maNhaCungCap"] + "")  );
-                arr.Add(x);
+                Hang h = new Hang(x.maHang, x.tenHang, x.donViTinh, (float) x.donGia, x.soLuongCon, x.maLoaiHang, x.maNhaCungCap);
+                arr.Add(h);
             }
-            Connect.closeConnect();
             return arr;
         }
         public List<Hang> layHangTheoTen(string tenHang)

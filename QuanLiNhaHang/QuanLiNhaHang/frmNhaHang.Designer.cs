@@ -41,7 +41,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.doanhThuHomNayBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.CSDLSieuThiDataSet = new QuanLiNhaHang.CSDLSieuThiDataSet();
             this.doanhThuThangBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hangTonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
@@ -159,9 +158,6 @@
             this.btnXemHoaDon = new DevComponents.DotNetBar.ButtonX();
             this.btnLapHoaDon = new DevComponents.DotNetBar.ButtonX();
             this.stiHoaDon = new DevComponents.DotNetBar.SuperTabItem();
-            this.doanhThuHomNayTableAdapter = new QuanLiNhaHang.CSDLSieuThiDataSetTableAdapters.doanhThuHomNayTableAdapter();
-            this.hangTonTableAdapter = new QuanLiNhaHang.CSDLSieuThiDataSetTableAdapters.hangTonTableAdapter();
-            this.doanhThuThangTableAdapter = new QuanLiNhaHang.CSDLSieuThiDataSetTableAdapters.doanhThuThangTableAdapter();
             this.panelEx26 = new DevComponents.DotNetBar.PanelEx();
             this.txtMaLoaiKhachHang = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtTenLoaiKhachHang = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -175,7 +171,6 @@
             this.tiLoaiKhachHang = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabControlPanel10 = new DevComponents.DotNetBar.TabControlPanel();
             ((System.ComponentModel.ISupportInitialize)(this.doanhThuHomNayBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CSDLSieuThiDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.doanhThuThangBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hangTonBindingSource)).BeginInit();
             this.panelEx1.SuspendLayout();
@@ -234,22 +229,17 @@
             // doanhThuHomNayBindingSource
             // 
             this.doanhThuHomNayBindingSource.DataMember = "doanhThuHomNay";
-            this.doanhThuHomNayBindingSource.DataSource = this.CSDLSieuThiDataSet;
             // 
             // CSDLSieuThiDataSet
             // 
-            this.CSDLSieuThiDataSet.DataSetName = "CSDLSieuThiDataSet";
-            this.CSDLSieuThiDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // doanhThuThangBindingSource
             // 
             this.doanhThuThangBindingSource.DataMember = "doanhThuThang";
-            this.doanhThuThangBindingSource.DataSource = this.CSDLSieuThiDataSet;
             // 
             // hangTonBindingSource
             // 
             this.hangTonBindingSource.DataMember = "hangTon";
-            this.hangTonBindingSource.DataSource = this.CSDLSieuThiDataSet;
             // 
             // panelEx1
             // 
@@ -2121,16 +2111,7 @@
             this.stiHoaDon.Text = "Hóa đơn";
             // 
             // doanhThuHomNayTableAdapter
-            // 
-            this.doanhThuHomNayTableAdapter.ClearBeforeFill = true;
-            // 
-            // hangTonTableAdapter
-            // 
-            this.hangTonTableAdapter.ClearBeforeFill = true;
-            // 
-            // doanhThuThangTableAdapter
-            // 
-            this.doanhThuThangTableAdapter.ClearBeforeFill = true;
+      
             // 
             // panelEx26
             // 
@@ -2346,7 +2327,6 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmSieuThi_FormClosed);
             this.Load += new System.EventHandler(this.frmNhaHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.doanhThuHomNayBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CSDLSieuThiDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.doanhThuThangBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hangTonBindingSource)).EndInit();
             this.panelEx1.ResumeLayout(false);
@@ -2512,12 +2492,8 @@
         private DevComponents.DotNetBar.ButtonX btnThemLoaiHang;
         private DevComponents.DotNetBar.ButtonX btnLoaiHang;
         private System.Windows.Forms.BindingSource doanhThuHomNayBindingSource;
-        private CSDLSieuThiDataSet CSDLSieuThiDataSet;
-        private CSDLSieuThiDataSetTableAdapters.doanhThuHomNayTableAdapter doanhThuHomNayTableAdapter;
         private System.Windows.Forms.BindingSource hangTonBindingSource;
-        private CSDLSieuThiDataSetTableAdapters.hangTonTableAdapter hangTonTableAdapter;
         private System.Windows.Forms.BindingSource doanhThuThangBindingSource;
-        private CSDLSieuThiDataSetTableAdapters.doanhThuThangTableAdapter doanhThuThangTableAdapter;
         private DevComponents.DotNetBar.TabControlPanel tabControlPanel11;
         private DevComponents.DotNetBar.TabItem tiChiTietHoaDon;
         private DevComponents.DotNetBar.PanelEx panelEx35;

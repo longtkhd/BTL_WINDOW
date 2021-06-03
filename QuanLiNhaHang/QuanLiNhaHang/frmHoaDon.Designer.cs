@@ -59,9 +59,6 @@
             this.txtTenKhachHang = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtMaKhachHang = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.txtMaNhanVien = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.doanhThuHomNayTableAdapter1 = new QuanLiNhaHang.CSDLSieuThiDataSetTableAdapters.doanhThuHomNayTableAdapter();
-            this.hangTonTableAdapter1 = new QuanLiNhaHang.CSDLSieuThiDataSetTableAdapters.hangTonTableAdapter();
-            this.hangTonTableAdapter2 = new QuanLiNhaHang.CSDLSieuThiDataSetTableAdapters.hangTonTableAdapter();
             this.panelEx21.SuspendLayout();
             this.panelEx22.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGio)).BeginInit();
@@ -472,21 +469,7 @@
             this.txtMaNhanVien.Name = "txtMaNhanVien";
             this.txtMaNhanVien.Size = new System.Drawing.Size(146, 30);
             this.txtMaNhanVien.TabIndex = 12;
-            // 
-            // doanhThuHomNayTableAdapter1
-            // 
-            this.doanhThuHomNayTableAdapter1.ClearBeforeFill = true;
-            // 
-            // hangTonTableAdapter1
-            // 
-            this.hangTonTableAdapter1.ClearBeforeFill = true;
-            // 
-            // hangTonTableAdapter2
-            // 
-            this.hangTonTableAdapter2.ClearBeforeFill = true;
-            // 
-            // frmHoaDon
-            // 
+            
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(910, 424);
@@ -539,8 +522,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private CSDLSieuThiDataSetTableAdapters.doanhThuHomNayTableAdapter doanhThuHomNayTableAdapter1;
-        private CSDLSieuThiDataSetTableAdapters.hangTonTableAdapter hangTonTableAdapter1;
-        private CSDLSieuThiDataSetTableAdapters.hangTonTableAdapter hangTonTableAdapter2;
     }
 }

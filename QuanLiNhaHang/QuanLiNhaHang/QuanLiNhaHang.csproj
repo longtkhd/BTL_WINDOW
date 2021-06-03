@@ -57,11 +57,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CSDLSieuThiDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CSDLSieuThiDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="frmChiTietHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -275,17 +270,6 @@
     <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="Report2.rdlc" />
     <EmbeddedResource Include="Report3.rdlc" />
-    <None Include="CSDLSieuThiDataSet.xsc">
-      <DependentUpon>CSDLSieuThiDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="CSDLSieuThiDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CSDLSieuThiDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="CSDLSieuThiDataSet.xss">
-      <DependentUpon>CSDLSieuThiDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

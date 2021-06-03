@@ -11,6 +11,7 @@ namespace DAL
 {
     public class DALNhanVien
     {
+
         public List<NhanVien> layNhanVien()
         {
             List<NhanVien> arr = new List<NhanVien>();
@@ -27,6 +28,7 @@ namespace DAL
             Connect.closeConnect();
             return arr;
         }
+
         public List<NhanVien> layNhanVienTheoTen(string tenNhanVien)
         {
             List<NhanVien> arr = new List<NhanVien>();

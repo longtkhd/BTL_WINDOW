@@ -11,21 +11,33 @@ namespace DAL
 {
     public class DALNhaCungCap
     {
+        DatabaseDataContext db = new DatabaseDataContext();
+
         public List<NhaCungCap> layNhaCungCap()
         {
             List<NhaCungCap> arr = new List<NhaCungCap>();
 
-           
-            Connect.openConnect();
-            string query = "select * from NhaCungCap";
-            SqlCommand cmd = new SqlCommand(query, Connect.connect);
-            SqlDataReader dr = cmd.ExecuteReader();
-            while (dr.Read())
+
+            //Connect.openConnect();
+
+            //string query = "select * from NhaCungCap";
+            //SqlCommand cmd = new SqlCommand(query, Connect.connect);
+            //SqlDataReader dr = cmd.ExecuteReader();
+            //while (dr.Read())
+            //{
+            //    NhaCungCap x = new NhaCungCap(int.Parse(dr["maNhaCungCap"] + ""), dr["tenNhaCungCap"] + "", dr["diaChi"] + "");
+            //    arr.Add(x);
+            //}
+            //Connect.closeConnect();
+
+            var nccs = (from x in db.NhaCungCapLinqs
+                        select new { x.maNhaCungCap, x.tenNhaCungCap, x.diaChi });
+            foreach (var ncc in nccs)
             {
-                NhaCungCap x = new NhaCungCap(int.Parse(dr["maNhaCungCap"] + ""), dr["tenNhaCungCap"] + "", dr["diaChi"] + "");
+                NhaCungCap x = new NhaCungCap(ncc.maNhaCungCap, ncc.tenNhaCungCap, ncc.diaChi);
                 arr.Add(x);
             }
-            Connect.closeConnect();
+
             return arr;
         }
         public List<NhaCungCap> layNhaCungCapTheoTen(string tenNhaCungCap)
