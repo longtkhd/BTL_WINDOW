@@ -86,20 +86,20 @@ namespace QuanLiNhaHang
         {
             BULLoaiHang bul = new BULLoaiHang();
             dgvLoaiHang.DataSource = bul.layLoaiHang();
-            dgvLoaiHang.Columns[0].HeaderText = "Mã loại hàng";
-            dgvLoaiHang.Columns[1].HeaderText = "Tên loại hàng";
+            dgvLoaiHang.Columns[0].HeaderText = "Mã món ăn";
+            dgvLoaiHang.Columns[1].HeaderText = "Tên loại món ăn";
 
         }
         public void hienDanhSachHang()
         {
             BULHang bul = new BULHang();
             dgvHang.DataSource = bul.layHang();
-            dgvHang.Columns[0].HeaderText = "Mã hàng";
-            dgvHang.Columns[1].HeaderText = "Tên hàng";
+            dgvHang.Columns[0].HeaderText = "Mã món ăn";
+            dgvHang.Columns[1].HeaderText = "Tên món ăn";
             dgvHang.Columns[2].HeaderText = "Đơn vị tính";
             dgvHang.Columns[3].HeaderText = "Đơn giá";
             dgvHang.Columns[4].HeaderText = "Số lượng còn";
-            dgvHang.Columns[5].HeaderText = "Mã loại hàng";
+            dgvHang.Columns[5].HeaderText = "Mã loại món ăn";
             dgvHang.Columns[6].HeaderText = "Mã NCC";
 
 
@@ -316,13 +316,13 @@ namespace QuanLiNhaHang
 
         private void btnNhanVien_Click(object sender, EventArgs e)
         {
+            tiNhanVien.Visible = true;
             tiHang.Visible = false;
             tiHoaDon.Visible = false;
             tiKhachHang.Visible = false;
             tiLoaiHang.Visible = false;
             //tiLoaiKhachHang.Visible = false;
             tiNCC.Visible = false;
-            tiNhanVien.Visible = true;
             tiChiTietHoaDon.Visible = false;
 
         }
@@ -562,6 +562,16 @@ namespace QuanLiNhaHang
         }
 
         private void dgvChiTiet_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvNhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

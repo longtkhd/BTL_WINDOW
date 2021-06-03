@@ -1,8 +1,8 @@
 use master
 go
-Create database CSDLSieuThi
+create database CSDLNhaHang
 go
-use CSDLSieuThi
+use CSDLNhaHang
 go
 create table TaiKhoan
 (
@@ -37,18 +37,18 @@ create table LoaiHang
 	tenLoaiHang nvarchar(50) not null,
 )
 GO
-insert into LoaiHang values(N'Thực phẩm đông lạnh')
-insert into LoaiHang values(N'Hoa quả')
-insert into LoaiHang values(N'Bánh kẹo')
-insert into LoaiHang values(N'Mỹ phẩm')
-insert into LoaiHang values(N'Sữa')
-insert into LoaiHang values(N'Đồ gia dụng')
-insert into LoaiHang values(N'Nước ngọt')
-insert into LoaiHang values(N'Bia')
+insert into LoaiHang values(N'Mì')
+insert into LoaiHang values(N'Bún nước')
+insert into LoaiHang values(N'Cơm tẻ')
+insert into LoaiHang values(N'Cơm nếp')
+insert into LoaiHang values(N'Món cá')
+insert into LoaiHang values(N'Món thịt')
+insert into LoaiHang values(N'Rau')
+insert into LoaiHang values(N'Lẩu')
 insert into LoaiHang values(N'Đồ khô')
-insert into LoaiHang values(N'Đồ điện tử')
-insert into LoaiHang values(N'Quần áo')
-insert into LoaiHang values(N'Giày dép')
+insert into LoaiHang values(N'Bia')
+insert into LoaiHang values(N'Xôi')
+insert into LoaiHang values(N'Nướng')
 
 create table NhaCungCap
 (
@@ -57,12 +57,12 @@ create table NhaCungCap
 	diaChi nvarchar(200) not null
 )
 GO
-insert into NhaCungCap values(N'Hữu Nghị',N'Hà Nội')
-insert into NhaCungCap values(N'Kinh Đô',N'Hà Nội')
-insert into NhaCungCap values(N'Long Hải',N'Hồ Chí Minh')
+insert into NhaCungCap values(N'BBQ',N'Hà Nội')
+insert into NhaCungCap values(N'Nhất Nhất',N'Hà Nội')
+insert into NhaCungCap values(N'Wang',N'Hồ Chí Minh')
 insert into NhaCungCap values(N'Hoàng Lan',N'Hải Phòng')
 insert into NhaCungCap values(N'Ajnomoto',N'Hà Nội')
-insert into NhaCungCap values(N'Hòa Phát',N'Hưng Yên')
+insert into NhaCungCap values(N'Đệ Nhất',N'Hưng Yên')
 insert into NhaCungCap values(N'Thăng Long',N'Hà Nội')
 insert into NhaCungCap values(N'Hải Hà',N'Bắc Ninh')
 insert into NhaCungCap values(N'Ngân Hương',N'Bắc Giang')
@@ -83,17 +83,17 @@ create table Hang
 	
 )
 GO
-insert into Hang values(N'Twister',N'Việt Nam đồng',20000,100,7,10)
-insert into Hang values(N'Cam ép',N'Việt Nam đồng',15000,100,7,10)
+insert into Hang values(N'Bún bò Huế',N'Việt Nam đồng',20000,100,7,10)
+insert into Hang values(N'Bia Hà Nội',N'Việt Nam đồng',15000,100,7,10)
 insert into Hang values(N'Coca',N'Việt Nam đồng',10000,100,7,10)
-insert into Hang values(N'Thạch Dừa',N'Việt Nam đồng',20000,100,2,3)
-insert into Hang values(N'Bánh rồng vàng',N'Việt Nam đồng',40000,100,3,1)
-insert into Hang values(N'Bánh Bông Lan',N'Việt Nam đồng',50000,100,3,1)
-insert into Hang values(N'Chocolate',N'Việt Nam đồng',60000,100,3,1)
-insert into Hang values(N'Twister',N'Việt Nam đồng',20000,100,7,10)
-insert into Hang values(N'Dao phay',N'Việt Nam đồng',25000,100,6,6)
-insert into Hang values(N'Chảo chống dính',N'Việt Nam đồng',35000,100,6,6)
-insert into Hang values(N'Chảo chống dính',N'Việt Nam đồng',59000,100,6,6)
+insert into Hang values(N'Phở bò',N'Việt Nam đồng',20000,100,2,3)
+insert into Hang values(N'Thịt Bò',N'Việt Nam đồng',400000,100,3,1)
+insert into Hang values(N'Canh Cua',N'Việt Nam đồng',50000,100,3,1)
+insert into Hang values(N'Thịt bò nướng',N'Việt Nam đồng',600000,100,3,1)
+insert into Hang values(N'Cá Hấp',N'Việt Nam đồng',200000,100,7,10)
+insert into Hang values(N'Lẩu thái',N'Việt Nam đồng',120000,100,6,6)
+insert into Hang values(N'Nướng 199k',N'Việt Nam đồng',199000,100,6,6)
+insert into Hang values(N'Lẩu buffet',N'Việt Nam đồng',199000,100,6,6)
 go
 create table LoaiKhachHang
 (
@@ -159,5 +159,5 @@ create table ChiTietHoaDon
 select * from ChiTietHoaDon
 select * from HoaDon
 go
-insert into ChiTietHoaDon values(1,3,10,200000)
-insert into ChiTietHoaDon values(2,3,20,300000)
+insert into ChiTietHoaDon values(1,1,10,200000)
+insert into ChiTietHoaDon values(2,1,20,300000)
