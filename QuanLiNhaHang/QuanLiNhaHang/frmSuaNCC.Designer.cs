@@ -51,6 +51,7 @@
             this.panelEx1.Controls.Add(this.txtDiaChi);
             this.panelEx1.Controls.Add(this.txtTenNCC);
             this.panelEx1.Controls.Add(this.txtMaNCC);
+            this.panelEx1.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelEx1.Location = new System.Drawing.Point(0, 0);
             this.panelEx1.Name = "panelEx1";
@@ -63,6 +64,7 @@
             this.panelEx1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.panelEx1.Style.GradientAngle = 90;
             this.panelEx1.TabIndex = 2;
+            this.panelEx1.Click += new System.EventHandler(this.panelEx1_Click);
             // 
             // btnSua
             // 

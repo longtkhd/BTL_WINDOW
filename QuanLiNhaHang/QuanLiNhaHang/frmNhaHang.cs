@@ -575,5 +575,10 @@ namespace QuanLiNhaHang
         {
 
         }
+
+        private void ds_SelectedTabChanged(object sender, DevComponents.DotNetBar.SuperTabStripSelectedTabChangedEventArgs e)
+        {
+
+        }
     }
 }

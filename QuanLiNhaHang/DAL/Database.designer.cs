@@ -30,33 +30,33 @@ namespace DAL
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertChiTietHoaDon(ChiTietHoaDon instance);
-    partial void UpdateChiTietHoaDon(ChiTietHoaDon instance);
-    partial void DeleteChiTietHoaDon(ChiTietHoaDon instance);
-    partial void InsertNhanVien(NhanVien instance);
-    partial void UpdateNhanVien(NhanVien instance);
-    partial void DeleteNhanVien(NhanVien instance);
+    partial void InsertChiTietHoaDonlinq(ChiTietHoaDonlinq instance);
+    partial void UpdateChiTietHoaDonlinq(ChiTietHoaDonlinq instance);
+    partial void DeleteChiTietHoaDonlinq(ChiTietHoaDonlinq instance);
+    partial void InsertNhanVienlinq(NhanVienlinq instance);
+    partial void UpdateNhanVienlinq(NhanVienlinq instance);
+    partial void DeleteNhanVienlinq(NhanVienlinq instance);
     partial void InsertHangLinq(HangLinq instance);
     partial void UpdateHangLinq(HangLinq instance);
     partial void DeleteHangLinq(HangLinq instance);
-    partial void InsertHoaDon(HoaDon instance);
-    partial void UpdateHoaDon(HoaDon instance);
-    partial void DeleteHoaDon(HoaDon instance);
-    partial void InsertKhachHang(KhachHang instance);
-    partial void UpdateKhachHang(KhachHang instance);
-    partial void DeleteKhachHang(KhachHang instance);
-    partial void InsertLoaiHang(LoaiHang instance);
-    partial void UpdateLoaiHang(LoaiHang instance);
-    partial void DeleteLoaiHang(LoaiHang instance);
-    partial void InsertLoaiKhachHang(LoaiKhachHang instance);
-    partial void UpdateLoaiKhachHang(LoaiKhachHang instance);
-    partial void DeleteLoaiKhachHang(LoaiKhachHang instance);
+    partial void InsertHoaDonlinq(HoaDonlinq instance);
+    partial void UpdateHoaDonlinq(HoaDonlinq instance);
+    partial void DeleteHoaDonlinq(HoaDonlinq instance);
+    partial void InsertKhachHanglinq(KhachHanglinq instance);
+    partial void UpdateKhachHanglinq(KhachHanglinq instance);
+    partial void DeleteKhachHanglinq(KhachHanglinq instance);
+    partial void InsertLoaiHanglinq(LoaiHanglinq instance);
+    partial void UpdateLoaiHanglinq(LoaiHanglinq instance);
+    partial void DeleteLoaiHanglinq(LoaiHanglinq instance);
+    partial void InsertLoaiKhachHanglinq(LoaiKhachHanglinq instance);
+    partial void UpdateLoaiKhachHanglinq(LoaiKhachHanglinq instance);
+    partial void DeleteLoaiKhachHanglinq(LoaiKhachHanglinq instance);
     partial void InsertNhaCungCapLinq(NhaCungCapLinq instance);
     partial void UpdateNhaCungCapLinq(NhaCungCapLinq instance);
     partial void DeleteNhaCungCapLinq(NhaCungCapLinq instance);
-    partial void InsertTaiKhoan(TaiKhoan instance);
-    partial void UpdateTaiKhoan(TaiKhoan instance);
-    partial void DeleteTaiKhoan(TaiKhoan instance);
+    partial void InsertTaiKhoanlinq(TaiKhoanlinq instance);
+    partial void UpdateTaiKhoanlinq(TaiKhoanlinq instance);
+    partial void DeleteTaiKhoanlinq(TaiKhoanlinq instance);
     #endregion
 		
 		public DatabaseDataContext() : 
@@ -89,19 +89,19 @@ namespace DAL
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<ChiTietHoaDon> ChiTietHoaDons
+		public System.Data.Linq.Table<ChiTietHoaDonlinq> ChiTietHoaDonlinqs
 		{
 			get
 			{
-				return this.GetTable<ChiTietHoaDon>();
+				return this.GetTable<ChiTietHoaDonlinq>();
 			}
 		}
 		
-		public System.Data.Linq.Table<NhanVien> NhanViens
+		public System.Data.Linq.Table<NhanVienlinq> NhanVienlinqs
 		{
 			get
 			{
-				return this.GetTable<NhanVien>();
+				return this.GetTable<NhanVienlinq>();
 			}
 		}
 		
@@ -113,35 +113,35 @@ namespace DAL
 			}
 		}
 		
-		public System.Data.Linq.Table<HoaDon> HoaDons
+		public System.Data.Linq.Table<HoaDonlinq> HoaDonlinqs
 		{
 			get
 			{
-				return this.GetTable<HoaDon>();
+				return this.GetTable<HoaDonlinq>();
 			}
 		}
 		
-		public System.Data.Linq.Table<KhachHang> KhachHangs
+		public System.Data.Linq.Table<KhachHanglinq> KhachHanglinqs
 		{
 			get
 			{
-				return this.GetTable<KhachHang>();
+				return this.GetTable<KhachHanglinq>();
 			}
 		}
 		
-		public System.Data.Linq.Table<LoaiHang> LoaiHangs
+		public System.Data.Linq.Table<LoaiHanglinq> LoaiHanglinqs
 		{
 			get
 			{
-				return this.GetTable<LoaiHang>();
+				return this.GetTable<LoaiHanglinq>();
 			}
 		}
 		
-		public System.Data.Linq.Table<LoaiKhachHang> LoaiKhachHangs
+		public System.Data.Linq.Table<LoaiKhachHanglinq> LoaiKhachHanglinqs
 		{
 			get
 			{
-				return this.GetTable<LoaiKhachHang>();
+				return this.GetTable<LoaiKhachHanglinq>();
 			}
 		}
 		
@@ -153,17 +153,17 @@ namespace DAL
 			}
 		}
 		
-		public System.Data.Linq.Table<TaiKhoan> TaiKhoans
+		public System.Data.Linq.Table<TaiKhoanlinq> TaiKhoanlinqs
 		{
 			get
 			{
-				return this.GetTable<TaiKhoan>();
+				return this.GetTable<TaiKhoanlinq>();
 			}
 		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ChiTietHoaDon")]
-	public partial class ChiTietHoaDon : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class ChiTietHoaDonlinq : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -178,7 +178,7 @@ namespace DAL
 		
 		private EntityRef<HangLinq> _Hang;
 		
-		private EntityRef<HoaDon> _HoaDon;
+		private EntityRef<HoaDonlinq> _HoaDon;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -194,10 +194,10 @@ namespace DAL
     partial void OnthanhTienChanged();
     #endregion
 		
-		public ChiTietHoaDon()
+		public ChiTietHoaDonlinq()
 		{
 			this._Hang = default(EntityRef<HangLinq>);
-			this._HoaDon = default(EntityRef<HoaDon>);
+			this._HoaDon = default(EntityRef<HoaDonlinq>);
 			OnCreated();
 		}
 		
@@ -289,7 +289,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Hang_ChiTietHoaDon", Storage="_Hang", ThisKey="maHang", OtherKey="maHang", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HangLinq_ChiTietHoaDon", Storage="_Hang", ThisKey="maHang", OtherKey="maHang", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
 		public HangLinq HangLinq
 		{
 			get
@@ -306,12 +306,12 @@ namespace DAL
 					if ((previousValue != null))
 					{
 						this._Hang.Entity = null;
-						previousValue.ChiTietHoaDons.Remove(this);
+						previousValue.ChiTietHoaDonlinqs.Remove(this);
 					}
 					this._Hang.Entity = value;
 					if ((value != null))
 					{
-						value.ChiTietHoaDons.Add(this);
+						value.ChiTietHoaDonlinqs.Add(this);
 						this._maHang = value.maHang;
 					}
 					else
@@ -324,7 +324,7 @@ namespace DAL
 		}
 		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HoaDon_ChiTietHoaDon", Storage="_HoaDon", ThisKey="maHoaDon", OtherKey="maHoaDon", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
-		public HoaDon HoaDon
+		public HoaDonlinq HoaDonlinq
 		{
 			get
 			{
@@ -332,7 +332,7 @@ namespace DAL
 			}
 			set
 			{
-				HoaDon previousValue = this._HoaDon.Entity;
+				HoaDonlinq previousValue = this._HoaDon.Entity;
 				if (((previousValue != value) 
 							|| (this._HoaDon.HasLoadedOrAssignedValue == false)))
 				{
@@ -340,19 +340,19 @@ namespace DAL
 					if ((previousValue != null))
 					{
 						this._HoaDon.Entity = null;
-						previousValue.ChiTietHoaDons.Remove(this);
+						previousValue.ChiTietHoaDonlinqs.Remove(this);
 					}
 					this._HoaDon.Entity = value;
 					if ((value != null))
 					{
-						value.ChiTietHoaDons.Add(this);
+						value.ChiTietHoaDonlinqs.Add(this);
 						this._maHoaDon = value.maHoaDon;
 					}
 					else
 					{
 						this._maHoaDon = default(int);
 					}
-					this.SendPropertyChanged("HoaDon");
+					this.SendPropertyChanged("HoaDonlinq");
 				}
 			}
 		}
@@ -379,7 +379,7 @@ namespace DAL
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.NhanVien")]
-	public partial class NhanVien : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class NhanVienlinq : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -394,9 +394,9 @@ namespace DAL
 		
 		private string _tenTaiKhoan;
 		
-		private EntitySet<HoaDon> _HoaDons;
+		private EntitySet<HoaDonlinq> _HoaDons;
 		
-		private EntityRef<TaiKhoan> _TaiKhoan;
+		private EntityRef<TaiKhoanlinq> _TaiKhoan;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -414,10 +414,10 @@ namespace DAL
     partial void OntenTaiKhoanChanged();
     #endregion
 		
-		public NhanVien()
+		public NhanVienlinq()
 		{
-			this._HoaDons = new EntitySet<HoaDon>(new Action<HoaDon>(this.attach_HoaDons), new Action<HoaDon>(this.detach_HoaDons));
-			this._TaiKhoan = default(EntityRef<TaiKhoan>);
+			this._HoaDons = new EntitySet<HoaDonlinq>(new Action<HoaDonlinq>(this.attach_HoaDons), new Action<HoaDonlinq>(this.detach_HoaDons));
+			this._TaiKhoan = default(EntityRef<TaiKhoanlinq>);
 			OnCreated();
 		}
 		
@@ -526,7 +526,7 @@ namespace DAL
 		}
 		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="NhanVien_HoaDon", Storage="_HoaDons", ThisKey="maNhanVien", OtherKey="maNhanVien")]
-		public EntitySet<HoaDon> HoaDons
+		public EntitySet<HoaDonlinq> HoaDonlinqs
 		{
 			get
 			{
@@ -539,7 +539,7 @@ namespace DAL
 		}
 		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TaiKhoan_NhanVien", Storage="_TaiKhoan", ThisKey="tenTaiKhoan", OtherKey="tenTaiKhoan", IsForeignKey=true, DeleteRule="CASCADE")]
-		public TaiKhoan TaiKhoan
+		public TaiKhoanlinq TaiKhoanlinq
 		{
 			get
 			{
@@ -547,7 +547,7 @@ namespace DAL
 			}
 			set
 			{
-				TaiKhoan previousValue = this._TaiKhoan.Entity;
+				TaiKhoanlinq previousValue = this._TaiKhoan.Entity;
 				if (((previousValue != value) 
 							|| (this._TaiKhoan.HasLoadedOrAssignedValue == false)))
 				{
@@ -555,19 +555,19 @@ namespace DAL
 					if ((previousValue != null))
 					{
 						this._TaiKhoan.Entity = null;
-						previousValue.NhanViens.Remove(this);
+						previousValue.NhanVienlinqs.Remove(this);
 					}
 					this._TaiKhoan.Entity = value;
 					if ((value != null))
 					{
-						value.NhanViens.Add(this);
+						value.NhanVienlinqs.Add(this);
 						this._tenTaiKhoan = value.tenTaiKhoan;
 					}
 					else
 					{
 						this._tenTaiKhoan = default(string);
 					}
-					this.SendPropertyChanged("TaiKhoan");
+					this.SendPropertyChanged("TaiKhoanlinq");
 				}
 			}
 		}
@@ -592,16 +592,16 @@ namespace DAL
 			}
 		}
 		
-		private void attach_HoaDons(HoaDon entity)
+		private void attach_HoaDons(HoaDonlinq entity)
 		{
 			this.SendPropertyChanging();
-			entity.NhanVien = this;
+			entity.NhanVienlinq = this;
 		}
 		
-		private void detach_HoaDons(HoaDon entity)
+		private void detach_HoaDons(HoaDonlinq entity)
 		{
 			this.SendPropertyChanging();
-			entity.NhanVien = null;
+			entity.NhanVienlinq = null;
 		}
 	}
 	
@@ -625,9 +625,9 @@ namespace DAL
 		
 		private int _maNhaCungCap;
 		
-		private EntitySet<ChiTietHoaDon> _ChiTietHoaDons;
+		private EntitySet<ChiTietHoaDonlinq> _ChiTietHoaDons;
 		
-		private EntityRef<LoaiHang> _LoaiHang;
+		private EntityRef<LoaiHanglinq> _LoaiHang;
 		
 		private EntityRef<NhaCungCapLinq> _NhaCungCapLinq;
 		
@@ -653,8 +653,8 @@ namespace DAL
 		
 		public HangLinq()
 		{
-			this._ChiTietHoaDons = new EntitySet<ChiTietHoaDon>(new Action<ChiTietHoaDon>(this.attach_ChiTietHoaDons), new Action<ChiTietHoaDon>(this.detach_ChiTietHoaDons));
-			this._LoaiHang = default(EntityRef<LoaiHang>);
+			this._ChiTietHoaDons = new EntitySet<ChiTietHoaDonlinq>(new Action<ChiTietHoaDonlinq>(this.attach_ChiTietHoaDons), new Action<ChiTietHoaDonlinq>(this.detach_ChiTietHoaDons));
+			this._LoaiHang = default(EntityRef<LoaiHanglinq>);
 			this._NhaCungCapLinq = default(EntityRef<NhaCungCapLinq>);
 			OnCreated();
 		}
@@ -807,8 +807,8 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Hang_ChiTietHoaDon", Storage="_ChiTietHoaDons", ThisKey="maHang", OtherKey="maHang")]
-		public EntitySet<ChiTietHoaDon> ChiTietHoaDons
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HangLinq_ChiTietHoaDon", Storage="_ChiTietHoaDons", ThisKey="maHang", OtherKey="maHang")]
+		public EntitySet<ChiTietHoaDonlinq> ChiTietHoaDonlinqs
 		{
 			get
 			{
@@ -820,8 +820,8 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LoaiHang_Hang", Storage="_LoaiHang", ThisKey="maLoaiHang", OtherKey="maLoaiHang", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
-		public LoaiHang LoaiHang
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LoaiHang_HangLinq", Storage="_LoaiHang", ThisKey="maLoaiHang", OtherKey="maLoaiHang", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
+		public LoaiHanglinq LoaiHanglinq
 		{
 			get
 			{
@@ -829,7 +829,7 @@ namespace DAL
 			}
 			set
 			{
-				LoaiHang previousValue = this._LoaiHang.Entity;
+				LoaiHanglinq previousValue = this._LoaiHang.Entity;
 				if (((previousValue != value) 
 							|| (this._LoaiHang.HasLoadedOrAssignedValue == false)))
 				{
@@ -849,12 +849,12 @@ namespace DAL
 					{
 						this._maLoaiHang = default(int);
 					}
-					this.SendPropertyChanged("LoaiHang");
+					this.SendPropertyChanged("LoaiHanglinq");
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="NhaCungCapLinq_Hang", Storage="_NhaCungCapLinq", ThisKey="maNhaCungCap", OtherKey="maNhaCungCap", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="NhaCungCapLinq_HangLinq", Storage="_NhaCungCapLinq", ThisKey="maNhaCungCap", OtherKey="maNhaCungCap", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
 		public NhaCungCapLinq NhaCungCapLinq
 		{
 			get
@@ -908,13 +908,13 @@ namespace DAL
 			}
 		}
 		
-		private void attach_ChiTietHoaDons(ChiTietHoaDon entity)
+		private void attach_ChiTietHoaDons(ChiTietHoaDonlinq entity)
 		{
 			this.SendPropertyChanging();
 			entity.HangLinq = this;
 		}
 		
-		private void detach_ChiTietHoaDons(ChiTietHoaDon entity)
+		private void detach_ChiTietHoaDons(ChiTietHoaDonlinq entity)
 		{
 			this.SendPropertyChanging();
 			entity.HangLinq = null;
@@ -922,7 +922,7 @@ namespace DAL
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.HoaDon")]
-	public partial class HoaDon : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class HoaDonlinq : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -935,11 +935,11 @@ namespace DAL
 		
 		private int _maNhanVien;
 		
-		private EntitySet<ChiTietHoaDon> _ChiTietHoaDons;
+		private EntitySet<ChiTietHoaDonlinq> _ChiTietHoaDons;
 		
-		private EntityRef<NhanVien> _NhanVien;
+		private EntityRef<NhanVienlinq> _NhanVien;
 		
-		private EntityRef<KhachHang> _KhachHang;
+		private EntityRef<KhachHanglinq> _KhachHang;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -955,11 +955,11 @@ namespace DAL
     partial void OnmaNhanVienChanged();
     #endregion
 		
-		public HoaDon()
+		public HoaDonlinq()
 		{
-			this._ChiTietHoaDons = new EntitySet<ChiTietHoaDon>(new Action<ChiTietHoaDon>(this.attach_ChiTietHoaDons), new Action<ChiTietHoaDon>(this.detach_ChiTietHoaDons));
-			this._NhanVien = default(EntityRef<NhanVien>);
-			this._KhachHang = default(EntityRef<KhachHang>);
+			this._ChiTietHoaDons = new EntitySet<ChiTietHoaDonlinq>(new Action<ChiTietHoaDonlinq>(this.attach_ChiTietHoaDons), new Action<ChiTietHoaDonlinq>(this.detach_ChiTietHoaDons));
+			this._NhanVien = default(EntityRef<NhanVienlinq>);
+			this._KhachHang = default(EntityRef<KhachHanglinq>);
 			OnCreated();
 		}
 		
@@ -1052,7 +1052,7 @@ namespace DAL
 		}
 		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HoaDon_ChiTietHoaDon", Storage="_ChiTietHoaDons", ThisKey="maHoaDon", OtherKey="maHoaDon")]
-		public EntitySet<ChiTietHoaDon> ChiTietHoaDons
+		public EntitySet<ChiTietHoaDonlinq> ChiTietHoaDonlinqs
 		{
 			get
 			{
@@ -1065,7 +1065,7 @@ namespace DAL
 		}
 		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="NhanVien_HoaDon", Storage="_NhanVien", ThisKey="maNhanVien", OtherKey="maNhanVien", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
-		public NhanVien NhanVien
+		public NhanVienlinq NhanVienlinq
 		{
 			get
 			{
@@ -1073,7 +1073,7 @@ namespace DAL
 			}
 			set
 			{
-				NhanVien previousValue = this._NhanVien.Entity;
+				NhanVienlinq previousValue = this._NhanVien.Entity;
 				if (((previousValue != value) 
 							|| (this._NhanVien.HasLoadedOrAssignedValue == false)))
 				{
@@ -1081,25 +1081,25 @@ namespace DAL
 					if ((previousValue != null))
 					{
 						this._NhanVien.Entity = null;
-						previousValue.HoaDons.Remove(this);
+						previousValue.HoaDonlinqs.Remove(this);
 					}
 					this._NhanVien.Entity = value;
 					if ((value != null))
 					{
-						value.HoaDons.Add(this);
+						value.HoaDonlinqs.Add(this);
 						this._maNhanVien = value.maNhanVien;
 					}
 					else
 					{
 						this._maNhanVien = default(int);
 					}
-					this.SendPropertyChanged("NhanVien");
+					this.SendPropertyChanged("NhanVienlinq");
 				}
 			}
 		}
 		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KhachHang_HoaDon", Storage="_KhachHang", ThisKey="maKhachHang", OtherKey="maKhachHang", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
-		public KhachHang KhachHang
+		public KhachHanglinq KhachHanglinq
 		{
 			get
 			{
@@ -1107,7 +1107,7 @@ namespace DAL
 			}
 			set
 			{
-				KhachHang previousValue = this._KhachHang.Entity;
+				KhachHanglinq previousValue = this._KhachHang.Entity;
 				if (((previousValue != value) 
 							|| (this._KhachHang.HasLoadedOrAssignedValue == false)))
 				{
@@ -1115,19 +1115,19 @@ namespace DAL
 					if ((previousValue != null))
 					{
 						this._KhachHang.Entity = null;
-						previousValue.HoaDons.Remove(this);
+						previousValue.HoaDonlinqs.Remove(this);
 					}
 					this._KhachHang.Entity = value;
 					if ((value != null))
 					{
-						value.HoaDons.Add(this);
+						value.HoaDonlinqs.Add(this);
 						this._maKhachHang = value.maKhachHang;
 					}
 					else
 					{
 						this._maKhachHang = default(int);
 					}
-					this.SendPropertyChanged("KhachHang");
+					this.SendPropertyChanged("KhachHanglinq");
 				}
 			}
 		}
@@ -1152,21 +1152,21 @@ namespace DAL
 			}
 		}
 		
-		private void attach_ChiTietHoaDons(ChiTietHoaDon entity)
+		private void attach_ChiTietHoaDons(ChiTietHoaDonlinq entity)
 		{
 			this.SendPropertyChanging();
-			entity.HoaDon = this;
+			entity.HoaDonlinq = this;
 		}
 		
-		private void detach_ChiTietHoaDons(ChiTietHoaDon entity)
+		private void detach_ChiTietHoaDons(ChiTietHoaDonlinq entity)
 		{
 			this.SendPropertyChanging();
-			entity.HoaDon = null;
+			entity.HoaDonlinq = null;
 		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.KhachHang")]
-	public partial class KhachHang : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class KhachHanglinq : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -1181,9 +1181,9 @@ namespace DAL
 		
 		private int _maLoaiKhachHang;
 		
-		private EntitySet<HoaDon> _HoaDons;
+		private EntitySet<HoaDonlinq> _HoaDons;
 		
-		private EntityRef<LoaiKhachHang> _LoaiKhachHang;
+		private EntityRef<LoaiKhachHanglinq> _LoaiKhachHang;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -1201,10 +1201,10 @@ namespace DAL
     partial void OnmaLoaiKhachHangChanged();
     #endregion
 		
-		public KhachHang()
+		public KhachHanglinq()
 		{
-			this._HoaDons = new EntitySet<HoaDon>(new Action<HoaDon>(this.attach_HoaDons), new Action<HoaDon>(this.detach_HoaDons));
-			this._LoaiKhachHang = default(EntityRef<LoaiKhachHang>);
+			this._HoaDons = new EntitySet<HoaDonlinq>(new Action<HoaDonlinq>(this.attach_HoaDons), new Action<HoaDonlinq>(this.detach_HoaDons));
+			this._LoaiKhachHang = default(EntityRef<LoaiKhachHanglinq>);
 			OnCreated();
 		}
 		
@@ -1313,7 +1313,7 @@ namespace DAL
 		}
 		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KhachHang_HoaDon", Storage="_HoaDons", ThisKey="maKhachHang", OtherKey="maKhachHang")]
-		public EntitySet<HoaDon> HoaDons
+		public EntitySet<HoaDonlinq> HoaDonlinqs
 		{
 			get
 			{
@@ -1326,7 +1326,7 @@ namespace DAL
 		}
 		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LoaiKhachHang_KhachHang", Storage="_LoaiKhachHang", ThisKey="maLoaiKhachHang", OtherKey="maLoaiKhachHang", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
-		public LoaiKhachHang LoaiKhachHang
+		public LoaiKhachHanglinq LoaiKhachHanglinq
 		{
 			get
 			{
@@ -1334,7 +1334,7 @@ namespace DAL
 			}
 			set
 			{
-				LoaiKhachHang previousValue = this._LoaiKhachHang.Entity;
+				LoaiKhachHanglinq previousValue = this._LoaiKhachHang.Entity;
 				if (((previousValue != value) 
 							|| (this._LoaiKhachHang.HasLoadedOrAssignedValue == false)))
 				{
@@ -1342,19 +1342,19 @@ namespace DAL
 					if ((previousValue != null))
 					{
 						this._LoaiKhachHang.Entity = null;
-						previousValue.KhachHangs.Remove(this);
+						previousValue.KhachHanglinqs.Remove(this);
 					}
 					this._LoaiKhachHang.Entity = value;
 					if ((value != null))
 					{
-						value.KhachHangs.Add(this);
+						value.KhachHanglinqs.Add(this);
 						this._maLoaiKhachHang = value.maLoaiKhachHang;
 					}
 					else
 					{
 						this._maLoaiKhachHang = default(int);
 					}
-					this.SendPropertyChanged("LoaiKhachHang");
+					this.SendPropertyChanged("LoaiKhachHanglinq");
 				}
 			}
 		}
@@ -1379,21 +1379,21 @@ namespace DAL
 			}
 		}
 		
-		private void attach_HoaDons(HoaDon entity)
+		private void attach_HoaDons(HoaDonlinq entity)
 		{
 			this.SendPropertyChanging();
-			entity.KhachHang = this;
+			entity.KhachHanglinq = this;
 		}
 		
-		private void detach_HoaDons(HoaDon entity)
+		private void detach_HoaDons(HoaDonlinq entity)
 		{
 			this.SendPropertyChanging();
-			entity.KhachHang = null;
+			entity.KhachHanglinq = null;
 		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.LoaiHang")]
-	public partial class LoaiHang : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class LoaiHanglinq : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -1414,7 +1414,7 @@ namespace DAL
     partial void OntenLoaiHangChanged();
     #endregion
 		
-		public LoaiHang()
+		public LoaiHanglinq()
 		{
 			this._Hangs = new EntitySet<HangLinq>(new Action<HangLinq>(this.attach_Hangs), new Action<HangLinq>(this.detach_Hangs));
 			OnCreated();
@@ -1460,7 +1460,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LoaiHang_Hang", Storage="_Hangs", ThisKey="maLoaiHang", OtherKey="maLoaiHang")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LoaiHang_HangLinq", Storage="_Hangs", ThisKey="maLoaiHang", OtherKey="maLoaiHang")]
 		public EntitySet<HangLinq> HangLinqs
 		{
 			get
@@ -1496,18 +1496,18 @@ namespace DAL
 		private void attach_Hangs(HangLinq entity)
 		{
 			this.SendPropertyChanging();
-			entity.LoaiHang = this;
+			entity.LoaiHanglinq = this;
 		}
 		
 		private void detach_Hangs(HangLinq entity)
 		{
 			this.SendPropertyChanging();
-			entity.LoaiHang = null;
+			entity.LoaiHanglinq = null;
 		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.LoaiKhachHang")]
-	public partial class LoaiKhachHang : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class LoaiKhachHanglinq : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -1516,7 +1516,7 @@ namespace DAL
 		
 		private string _tenLoaiKhachHang;
 		
-		private EntitySet<KhachHang> _KhachHangs;
+		private EntitySet<KhachHanglinq> _KhachHangs;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -1528,9 +1528,9 @@ namespace DAL
     partial void OntenLoaiKhachHangChanged();
     #endregion
 		
-		public LoaiKhachHang()
+		public LoaiKhachHanglinq()
 		{
-			this._KhachHangs = new EntitySet<KhachHang>(new Action<KhachHang>(this.attach_KhachHangs), new Action<KhachHang>(this.detach_KhachHangs));
+			this._KhachHangs = new EntitySet<KhachHanglinq>(new Action<KhachHanglinq>(this.attach_KhachHangs), new Action<KhachHanglinq>(this.detach_KhachHangs));
 			OnCreated();
 		}
 		
@@ -1575,7 +1575,7 @@ namespace DAL
 		}
 		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LoaiKhachHang_KhachHang", Storage="_KhachHangs", ThisKey="maLoaiKhachHang", OtherKey="maLoaiKhachHang")]
-		public EntitySet<KhachHang> KhachHangs
+		public EntitySet<KhachHanglinq> KhachHanglinqs
 		{
 			get
 			{
@@ -1607,16 +1607,16 @@ namespace DAL
 			}
 		}
 		
-		private void attach_KhachHangs(KhachHang entity)
+		private void attach_KhachHangs(KhachHanglinq entity)
 		{
 			this.SendPropertyChanging();
-			entity.LoaiKhachHang = this;
+			entity.LoaiKhachHanglinq = this;
 		}
 		
-		private void detach_KhachHangs(KhachHang entity)
+		private void detach_KhachHangs(KhachHanglinq entity)
 		{
 			this.SendPropertyChanging();
-			entity.LoaiKhachHang = null;
+			entity.LoaiKhachHanglinq = null;
 		}
 	}
 	
@@ -1712,7 +1712,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="NhaCungCapLinq_Hang", Storage="_Hangs", ThisKey="maNhaCungCap", OtherKey="maNhaCungCap")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="NhaCungCapLinq_HangLinq", Storage="_Hangs", ThisKey="maNhaCungCap", OtherKey="maNhaCungCap")]
 		public EntitySet<HangLinq> HangLinqs
 		{
 			get
@@ -1759,7 +1759,7 @@ namespace DAL
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TaiKhoan")]
-	public partial class TaiKhoan : INotifyPropertyChanging, INotifyPropertyChanged
+	public partial class TaiKhoanlinq : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
@@ -1770,7 +1770,7 @@ namespace DAL
 		
 		private string _quyen;
 		
-		private EntitySet<NhanVien> _NhanViens;
+		private EntitySet<NhanVienlinq> _NhanViens;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -1784,9 +1784,9 @@ namespace DAL
     partial void OnquyenChanged();
     #endregion
 		
-		public TaiKhoan()
+		public TaiKhoanlinq()
 		{
-			this._NhanViens = new EntitySet<NhanVien>(new Action<NhanVien>(this.attach_NhanViens), new Action<NhanVien>(this.detach_NhanViens));
+			this._NhanViens = new EntitySet<NhanVienlinq>(new Action<NhanVienlinq>(this.attach_NhanViens), new Action<NhanVienlinq>(this.detach_NhanViens));
 			OnCreated();
 		}
 		
@@ -1851,7 +1851,7 @@ namespace DAL
 		}
 		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TaiKhoan_NhanVien", Storage="_NhanViens", ThisKey="tenTaiKhoan", OtherKey="tenTaiKhoan")]
-		public EntitySet<NhanVien> NhanViens
+		public EntitySet<NhanVienlinq> NhanVienlinqs
 		{
 			get
 			{
@@ -1883,16 +1883,16 @@ namespace DAL
 			}
 		}
 		
-		private void attach_NhanViens(NhanVien entity)
+		private void attach_NhanViens(NhanVienlinq entity)
 		{
 			this.SendPropertyChanging();
-			entity.TaiKhoan = this;
+			entity.TaiKhoanlinq = this;
 		}
 		
-		private void detach_NhanViens(NhanVien entity)
+		private void detach_NhanViens(NhanVienlinq entity)
 		{
 			this.SendPropertyChanging();
-			entity.TaiKhoan = null;
+			entity.TaiKhoanlinq = null;
 		}
 	}
 }
