@@ -23,7 +23,7 @@ namespace DAL
 	
 	
 	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="CSDLNhaHang")]
-	public partial class DatabaseDataContext : System.Data.Linq.DataContext
+	public partial class DataContext : System.Data.Linq.DataContext
 	{
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
@@ -59,31 +59,31 @@ namespace DAL
     partial void DeleteTaiKhoanlinq(TaiKhoanlinq instance);
     #endregion
 		
-		public DatabaseDataContext() : 
+		public DataContext() : 
 				base(global::DAL.Properties.Settings.Default.CSDLNhaHangConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DatabaseDataContext(string connection) : 
+		public DataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DatabaseDataContext(System.Data.IDbConnection connection) : 
+		public DataContext(System.Data.IDbConnection connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DatabaseDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public DataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DatabaseDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public DataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
@@ -289,7 +289,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HangLinq_ChiTietHoaDon", Storage="_Hang", ThisKey="maHang", OtherKey="maHang", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HangLinq_ChiTietHoaDonlinq", Storage="_Hang", ThisKey="maHang", OtherKey="maHang", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
 		public HangLinq HangLinq
 		{
 			get
@@ -323,7 +323,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HoaDon_ChiTietHoaDon", Storage="_HoaDon", ThisKey="maHoaDon", OtherKey="maHoaDon", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HoaDonlinq_ChiTietHoaDonlinq", Storage="_HoaDon", ThisKey="maHoaDon", OtherKey="maHoaDon", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
 		public HoaDonlinq HoaDonlinq
 		{
 			get
@@ -525,7 +525,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="NhanVien_HoaDon", Storage="_HoaDons", ThisKey="maNhanVien", OtherKey="maNhanVien")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="NhanVienlinq_HoaDonlinq", Storage="_HoaDons", ThisKey="maNhanVien", OtherKey="maNhanVien")]
 		public EntitySet<HoaDonlinq> HoaDonlinqs
 		{
 			get
@@ -538,7 +538,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TaiKhoan_NhanVien", Storage="_TaiKhoan", ThisKey="tenTaiKhoan", OtherKey="tenTaiKhoan", IsForeignKey=true, DeleteRule="CASCADE")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TaiKhoanlinq_NhanVienlinq", Storage="_TaiKhoan", ThisKey="tenTaiKhoan", OtherKey="tenTaiKhoan", IsForeignKey=true, DeleteRule="CASCADE")]
 		public TaiKhoanlinq TaiKhoanlinq
 		{
 			get
@@ -807,7 +807,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HangLinq_ChiTietHoaDon", Storage="_ChiTietHoaDons", ThisKey="maHang", OtherKey="maHang")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HangLinq_ChiTietHoaDonlinq", Storage="_ChiTietHoaDons", ThisKey="maHang", OtherKey="maHang")]
 		public EntitySet<ChiTietHoaDonlinq> ChiTietHoaDonlinqs
 		{
 			get
@@ -820,7 +820,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LoaiHang_HangLinq", Storage="_LoaiHang", ThisKey="maLoaiHang", OtherKey="maLoaiHang", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LoaiHanglinq_HangLinq", Storage="_LoaiHang", ThisKey="maLoaiHang", OtherKey="maLoaiHang", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
 		public LoaiHanglinq LoaiHanglinq
 		{
 			get
@@ -1051,7 +1051,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HoaDon_ChiTietHoaDon", Storage="_ChiTietHoaDons", ThisKey="maHoaDon", OtherKey="maHoaDon")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="HoaDonlinq_ChiTietHoaDonlinq", Storage="_ChiTietHoaDons", ThisKey="maHoaDon", OtherKey="maHoaDon")]
 		public EntitySet<ChiTietHoaDonlinq> ChiTietHoaDonlinqs
 		{
 			get
@@ -1064,7 +1064,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="NhanVien_HoaDon", Storage="_NhanVien", ThisKey="maNhanVien", OtherKey="maNhanVien", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="NhanVienlinq_HoaDonlinq", Storage="_NhanVien", ThisKey="maNhanVien", OtherKey="maNhanVien", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
 		public NhanVienlinq NhanVienlinq
 		{
 			get
@@ -1098,7 +1098,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KhachHang_HoaDon", Storage="_KhachHang", ThisKey="maKhachHang", OtherKey="maKhachHang", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KhachHanglinq_HoaDonlinq", Storage="_KhachHang", ThisKey="maKhachHang", OtherKey="maKhachHang", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
 		public KhachHanglinq KhachHanglinq
 		{
 			get
@@ -1312,7 +1312,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KhachHang_HoaDon", Storage="_HoaDons", ThisKey="maKhachHang", OtherKey="maKhachHang")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KhachHanglinq_HoaDonlinq", Storage="_HoaDons", ThisKey="maKhachHang", OtherKey="maKhachHang")]
 		public EntitySet<HoaDonlinq> HoaDonlinqs
 		{
 			get
@@ -1325,7 +1325,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LoaiKhachHang_KhachHang", Storage="_LoaiKhachHang", ThisKey="maLoaiKhachHang", OtherKey="maLoaiKhachHang", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LoaiKhachHanglinq_KhachHanglinq", Storage="_LoaiKhachHang", ThisKey="maLoaiKhachHang", OtherKey="maLoaiKhachHang", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
 		public LoaiKhachHanglinq LoaiKhachHanglinq
 		{
 			get
@@ -1460,7 +1460,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LoaiHang_HangLinq", Storage="_Hangs", ThisKey="maLoaiHang", OtherKey="maLoaiHang")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LoaiHanglinq_HangLinq", Storage="_Hangs", ThisKey="maLoaiHang", OtherKey="maLoaiHang")]
 		public EntitySet<HangLinq> HangLinqs
 		{
 			get
@@ -1574,7 +1574,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LoaiKhachHang_KhachHang", Storage="_KhachHangs", ThisKey="maLoaiKhachHang", OtherKey="maLoaiKhachHang")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LoaiKhachHanglinq_KhachHanglinq", Storage="_KhachHangs", ThisKey="maLoaiKhachHang", OtherKey="maLoaiKhachHang")]
 		public EntitySet<KhachHanglinq> KhachHanglinqs
 		{
 			get
@@ -1850,7 +1850,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TaiKhoan_NhanVien", Storage="_NhanViens", ThisKey="tenTaiKhoan", OtherKey="tenTaiKhoan")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="TaiKhoanlinq_NhanVienlinq", Storage="_NhanViens", ThisKey="tenTaiKhoan", OtherKey="tenTaiKhoan")]
 		public EntitySet<NhanVienlinq> NhanVienlinqs
 		{
 			get

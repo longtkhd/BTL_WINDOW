@@ -1,14 +1,11 @@
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.exe.config
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.exe
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\bin\Debug\QuanLiNhaHang.pdb
-D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\bin\Debug\BUL.dll
-D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\bin\Debug\DTO.dll
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\bin\Debug\DAL.dll
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\bin\Debug\BUL.pdb
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\bin\Debug\DevComponents.DotNetBar2.xml
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\bin\Debug\DTO.pdb
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\bin\Debug\DAL.pdb
-D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csprojAssemblyReference.cache
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.frmChiTietHoaDon.resources
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.frmDangNhap.resources
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.frmHoaDon.resources
@@ -38,3 +35,8 @@ D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.exe
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.pdb
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.frmNhaHang.resources
 D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\bin\Debug\DevComponents.DotNetBar2.dll
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\bin\Debug\BUL.dll.config
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\bin\Debug\DAL.dll.config
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\bin\Debug\BUL.dll
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\bin\Debug\DTO.dll
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\QuanLiNhaHang\obj\Debug\QuanLiNhaHang.csprojAssemblyReference.cache

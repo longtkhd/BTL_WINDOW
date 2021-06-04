@@ -7,3 +7,16 @@ E:\dephong\doan\SieuThi\app\QuanLySieuThi\BUL\bin\Debug\DTO.dll
 E:\dephong\doan\SieuThi\app\QuanLySieuThi\BUL\bin\Debug\DAL.pdb
 E:\dephong\doan\SieuThi\app\QuanLySieuThi\BUL\bin\Debug\DTO.pdb
 E:\dephong\doan\SieuThi\app\QuanLySieuThi\BUL\obj\Debug\BUL.csprojResolveAssemblyReference.cache
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\BUL\bin\Debug\BUL.dll.config
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\BUL\bin\Debug\BUL.dll
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\BUL\bin\Debug\BUL.pdb
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\BUL\bin\Debug\DAL.dll
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\BUL\bin\Debug\DTO.dll
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\BUL\bin\Debug\DAL.pdb
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\BUL\bin\Debug\DTO.pdb
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\BUL\obj\Debug\BUL.csprojAssemblyReference.cache
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\BUL\obj\Debug\BUL.csproj.CoreCompileInputs.cache
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\BUL\obj\Debug\BUL.csproj.CopyComplete
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\BUL\obj\Debug\BUL.dll
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\BUL\obj\Debug\BUL.pdb
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\BUL\bin\Debug\DAL.dll.config

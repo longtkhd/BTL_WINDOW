@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using DTO;
 using System.Data.SqlClient;
 using System.Configuration;
+
 namespace DAL
 {
     public class Connect

@@ -5,3 +5,13 @@ E:\dephong\doan\SieuThi\app\QuanLySieuThi\DAL\bin\Debug\DTO.pdb
 E:\dephong\doan\SieuThi\app\QuanLySieuThi\DAL\obj\Debug\DAL.dll
 E:\dephong\doan\SieuThi\app\QuanLySieuThi\DAL\obj\Debug\DAL.pdb
 E:\dephong\doan\SieuThi\app\QuanLySieuThi\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\DAL\bin\Debug\DAL.dll.config
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\DAL\bin\Debug\DAL.dll
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\DAL\bin\Debug\DAL.pdb
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\DAL\bin\Debug\DTO.dll
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\DAL\bin\Debug\DTO.pdb
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\DAL\obj\Debug\DAL.dll
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\DAL\obj\Debug\DAL.pdb
+D:\Ki6\WINDOW\BTL_WINDOW\QuanLiNhaHang\DAL\obj\Debug\DAL.csprojAssemblyReference.cache

@@ -11,24 +11,11 @@ namespace DAL
 {
     public class DALNhaCungCap
     {
-        DatabaseDataContext db = new DatabaseDataContext();
+        DataContext db = new DataContext();
 
         public List<NhaCungCap> layNhaCungCap()
         {
             List<NhaCungCap> arr = new List<NhaCungCap>();
-
-
-            //Connect.openConnect();
-
-            //string query = "select * from NhaCungCap";
-            //SqlCommand cmd = new SqlCommand(query, Connect.connect);
-            //SqlDataReader dr = cmd.ExecuteReader();
-            //while (dr.Read())
-            //{
-            //    NhaCungCap x = new NhaCungCap(int.Parse(dr["maNhaCungCap"] + ""), dr["tenNhaCungCap"] + "", dr["diaChi"] + "");
-            //    arr.Add(x);
-            //}
-            //Connect.closeConnect();
 
             var nccs = (from x in db.NhaCungCapLinqs
                         select new { x.maNhaCungCap, x.tenNhaCungCap, x.diaChi });
@@ -43,71 +30,55 @@ namespace DAL
         public List<NhaCungCap> layNhaCungCapTheoTen(string tenNhaCungCap)
         {
             List<NhaCungCap> arr = new List<NhaCungCap>();
-
-            Connect.openConnect();
-            string query = "select * from NhaCungCap where tenNhaCungCap LIKE @tenNhaCungCap + '%'";
-            SqlCommand cmd = new SqlCommand(query, Connect.connect);
-            cmd.Parameters.AddWithValue("tenNhaCungCap", tenNhaCungCap);
-
-            SqlDataReader dr = cmd.ExecuteReader();
-            while (dr.Read())
+            var nccs = (from x in db.NhaCungCapLinqs where x.tenNhaCungCap == tenNhaCungCap
+                        select new { x.maNhaCungCap, x.tenNhaCungCap, x.diaChi });
+            foreach (var ncc in nccs)
             {
-                NhaCungCap x = new NhaCungCap(int.Parse(dr["maNhaCungCap"] + ""), dr["tenNhaCungCap"] + "", dr["diaChi"] + "");
+                NhaCungCap x = new NhaCungCap(ncc.maNhaCungCap, ncc.tenNhaCungCap, ncc.diaChi);
                 arr.Add(x);
             }
-            Connect.closeConnect();
             return arr;
         }
         public List<NhaCungCap> layNhaCungCapTheoMa(string maNhaCungCap)
         {
             List<NhaCungCap> arr = new List<NhaCungCap>();
-
-            Connect.openConnect();
-            string query = "select * from NhaCungCap where maNhaCungCap LIKE @maNhaCungCap + '%'";
-            SqlCommand cmd = new SqlCommand(query, Connect.connect);
-            cmd.Parameters.AddWithValue("maNhaCungCap", maNhaCungCap);
-
-            SqlDataReader dr = cmd.ExecuteReader();
-            while (dr.Read())
+            var nccs = (from x in db.NhaCungCapLinqs 
+                        where x.maNhaCungCap == int.Parse(maNhaCungCap)
+                        select new { x.maNhaCungCap, x.tenNhaCungCap, x.diaChi });
+            foreach (var ncc in nccs)
             {
-                NhaCungCap x = new NhaCungCap(int.Parse(dr["maNhaCungCap"] + ""), dr["tenNhaCungCap"] + "", dr["diaChi"] + "");
+                NhaCungCap x = new NhaCungCap(ncc.maNhaCungCap, ncc.tenNhaCungCap, ncc.diaChi);
                 arr.Add(x);
             }
-            Connect.closeConnect();
             return arr;
+
         }
         public void themNhaCungCap(NhaCungCap ncc)
         {
-            string sql = "insert into NhaCungCap values(@tenNhaCungCap, @diaChi)";
-            Connect.openConnect();
-            SqlCommand cmd = new SqlCommand(sql, Connect.connect);
-            cmd.Parameters.AddWithValue("tenNhaCungCap", ncc.TenNhaCungCap);
-            cmd.Parameters.AddWithValue("diaChi", ncc.DiaChi);
-
-            cmd.ExecuteNonQuery();
-            Connect.closeConnect();
+            NhaCungCapLinq nccm = new NhaCungCapLinq();
+            nccm.maNhaCungCap = ncc.MaNhaCungCap;
+            nccm.tenNhaCungCap = ncc.TenNhaCungCap;
+            nccm.diaChi = ncc.DiaChi;
+            db.NhaCungCapLinqs.InsertOnSubmit(nccm);
+            db.SubmitChanges();
         }
         public void suaNhaCungCap(NhaCungCap ncc)
         {
-            string sql = "update NhaCungCap set diaChi=@diaChi, tenNhaCungCap=@tenNhaCungCap where maNhaCungCap =@maNhaCungCap ";
-            Connect.openConnect();
-            SqlCommand cmd = new SqlCommand(sql, Connect.connect);
-            cmd.Parameters.AddWithValue("maNhaCungCap", ncc.MaNhaCungCap);
-            cmd.Parameters.AddWithValue("tenNhaCungCap", ncc.TenNhaCungCap);
-            cmd.Parameters.AddWithValue("diaChi", ncc.DiaChi);
-
-            cmd.ExecuteNonQuery();
-            Connect.closeConnect();
+            var capnhat = db.NhaCungCapLinqs.Single(nccs => nccs.maNhaCungCap == ncc.MaNhaCungCap);
+            capnhat.maNhaCungCap = ncc.MaNhaCungCap;
+            capnhat.tenNhaCungCap = ncc.TenNhaCungCap;
+            capnhat.diaChi = ncc.DiaChi;
+            db.SubmitChanges();
         }
 
         public void xoaNhaCungCap(NhaCungCap ncc)
         {
-            string sql = "delete from NhaCungCap where maNhaCungCap=@maNhaCungCap";
-            Connect.openConnect();
-            SqlCommand cmd = new SqlCommand(sql, Connect.connect);
-            cmd.Parameters.AddWithValue("maNhaCungCap", ncc.MaNhaCungCap);
-            cmd.ExecuteNonQuery();
-            Connect.closeConnect();
+            var xoa = from nccs in db.NhaCungCapLinqs where nccs.maNhaCungCap == ncc.MaNhaCungCap select nccs;
+            foreach(var i in xoa)
+            {
+                db.NhaCungCapLinqs.DeleteOnSubmit(i);
+                db.SubmitChanges();
+            }
         }
     }
 }

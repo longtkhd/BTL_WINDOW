@@ -11,30 +11,16 @@ namespace DAL
 {
     public class DALHang
     {
-        DatabaseDataContext db = new DatabaseDataContext();
+        DataContext db = new DataContext();
         public List<Hang> layHang()
         {
             List<Hang> arr = new List<Hang>();
 
-
-            //Connect.openConnect();
-            //string query = "select * from Hang";
-            //SqlCommand cmd = new SqlCommand(query, Connect.connect);
-            //SqlDataReader dr = cmd.ExecuteReader();
-            //while (dr.Read())
-            //{
-            //    Hang x = new Hang(int.Parse(dr["maHang"] + ""), dr["tenHang"] + "", dr["donViTinh"] 
-            //+ "",float.Parse(dr["donGia"] + ""),int.Parse(dr["soLuongCon"] + ""),int.Parse(dr["maLoaiHang"] + ""), int.Parse(dr["maNhaCungCap"]
-            //+ "")  );
-            //    arr.Add(x);
-            //}
-            //Connect.closeConnect();
-
             var hs = from x in db.HangLinqs
                      select new { x.maHang, x.tenHang, x.donViTinh, x.donGia, x.soLuongCon, x.maLoaiHang, x.maNhaCungCap };
-            foreach(var x in hs)
+            foreach (var x in hs)
             {
-                Hang h = new Hang(x.maHang, x.tenHang, x.donViTinh, (float) x.donGia, x.soLuongCon, x.maLoaiHang, x.maNhaCungCap);
+                Hang h = new Hang(x.maHang, x.tenHang, x.donViTinh, (float)x.donGia, x.soLuongCon, x.maLoaiHang, x.maNhaCungCap);
                 arr.Add(h);
             }
             return arr;
@@ -43,19 +29,14 @@ namespace DAL
         {
             List<Hang> arr = new List<Hang>();
 
-            Connect.openConnect();
-            string query = "select * from Hang where tenHang LIKE @tenHang + '%'";
-            SqlCommand cmd = new SqlCommand(query, Connect.connect);
-            cmd.Parameters.AddWithValue("tenHang", tenHang);
-
-            SqlDataReader dr = cmd.ExecuteReader();
-            while (dr.Read())
+            var hs = from x in db.HangLinqs
+                     where x.tenHang == tenHang
+                     select x;
+            foreach (var x in hs)
             {
-                Hang x = new Hang(int.Parse(dr["maHang"] + ""), dr["tenHang"] + "", dr["donViTinh"] + "", float.Parse(dr["donGia"] + ""), int.Parse(dr["soLuongCon"] + ""), int.Parse(dr["maLoaiHang"] + ""), int.Parse(dr["maNhaCungCap"] + ""));
-
-                arr.Add(x);
+                Hang h = new Hang(x.maHang, x.tenHang, x.donViTinh, (float)x.donGia, x.soLuongCon, x.maLoaiHang, x.maNhaCungCap);
+                arr.Add(h);
             }
-            Connect.closeConnect();
             return arr;
         }
         public bool coLoaiHang(string maLoaiHang)
@@ -98,60 +79,50 @@ namespace DAL
         {
             List<Hang> arr = new List<Hang>();
 
-            Connect.openConnect();
-            string query = "select * from Hang where maHang LIKE @maHang + '%'";
-            SqlCommand cmd = new SqlCommand(query, Connect.connect);
-            cmd.Parameters.AddWithValue("maHang", maHang);
-
-            SqlDataReader dr = cmd.ExecuteReader();
-            while (dr.Read())
+            var hs = from x in db.HangLinqs
+                     where x.maHang == int.Parse(maHang)
+                     select x;
+            foreach (var x in hs)
             {
-                Hang x = new Hang(int.Parse(dr["maHang"] + ""), dr["tenHang"] + "", dr["donViTinh"] + "", float.Parse(dr["donGia"] + ""), int.Parse(dr["soLuongCon"] + ""), int.Parse(dr["maLoaiHang"] + ""), int.Parse(dr["maNhaCungCap"] + ""));
-                arr.Add(x);
+                Hang h = new Hang(x.maHang, x.tenHang, x.donViTinh, (float)x.donGia, x.soLuongCon, x.maLoaiHang, x.maNhaCungCap);
+                arr.Add(h);
             }
-            Connect.closeConnect();
             return arr;
         }
         public void themHang(Hang h)
         {
-            string sql = "insert into Hang values(@tenHang, @donViTinh, @donGia, @soLuongCon, @maLoaiHang, @maNhaCungCap)";
-            Connect.openConnect();
-            SqlCommand cmd = new SqlCommand(sql, Connect.connect);
-            cmd.Parameters.AddWithValue("tenHang", h.TenHang);
-            cmd.Parameters.AddWithValue("donViTinh", h.DonViTinh);
-            cmd.Parameters.AddWithValue("donGia", h.DonGia);
-            cmd.Parameters.AddWithValue("soLuongCon", h.SoLuongCon);
-            cmd.Parameters.AddWithValue("maLoaiHang", h.MaLoaiHang);
-            cmd.Parameters.AddWithValue("maNhaCungCap", h.MaNhaCungCap);
-
-            cmd.ExecuteNonQuery();
-            Connect.closeConnect();
+            HangLinq monan = new HangLinq();
+            monan.maHang = h.MaHang;
+            monan.tenHang = h.TenHang;
+            monan.donViTinh = h.DonViTinh;
+            monan.soLuongCon = h.SoLuongCon;
+            monan.maLoaiHang = h.MaLoaiHang;
+            monan.maNhaCungCap = h.MaNhaCungCap;
+            monan.donGia = h.DonGia;
+            db.HangLinqs.InsertOnSubmit(monan);
+            db.SubmitChanges();
         }
         public void suaHang(Hang h)
         {
-            string sql = "update Hang set tenHang=@tenHang, donViTinh=@donViTinh, donGia=@donGia, soLuongCon=@soLuongCon, maLoaiHang=@maLoaiHang, maNhaCungCap=@maNhaCungCap where maHang =@maHang ";
-            Connect.openConnect();
-            SqlCommand cmd = new SqlCommand(sql, Connect.connect);
-            cmd.Parameters.AddWithValue("maHang", h.MaHang);
-            cmd.Parameters.AddWithValue("tenHang", h.TenHang);
-            cmd.Parameters.AddWithValue("donViTinh", h.DonViTinh);
-            cmd.Parameters.AddWithValue("donGia", h.DonGia);
-            cmd.Parameters.AddWithValue("soLuongCon", h.SoLuongCon);
-            cmd.Parameters.AddWithValue("maLoaiHang", h.MaLoaiHang);
-            cmd.Parameters.AddWithValue("maNhaCungCap", h.MaNhaCungCap);
-
-            cmd.ExecuteNonQuery();
-            Connect.closeConnect();
+            var capnhat = db.HangLinqs.Single(monan => monan.maHang == h.MaHang);
+            capnhat.maHang = h.MaHang;
+            capnhat.tenHang = h.TenHang;
+            capnhat.donViTinh = h.DonViTinh;
+            capnhat.soLuongCon = h.SoLuongCon;
+            capnhat.maLoaiHang = h.MaLoaiHang;
+            capnhat.maNhaCungCap = h.MaNhaCungCap;
+            capnhat.donGia = h.DonGia;
+            db.SubmitChanges();
         }
 
         public void xoaHang(Hang h)
         {
-            string sql = "delete from Hang where maHang=@maHang";
-            Connect.openConnect();
-            SqlCommand cmd = new SqlCommand(sql, Connect.connect);
-            cmd.Parameters.AddWithValue("maHang", h.MaHang);
-            cmd.ExecuteNonQuery();
-            Connect.closeConnect();
+            var xoa = from monan in db.HangLinqs where monan.maHang == h.MaHang select monan;
+            foreach (var i in xoa)
+            {
+                db.HangLinqs.DeleteOnSubmit(i);
+                db.SubmitChanges();
+            }
         }
     }
 }

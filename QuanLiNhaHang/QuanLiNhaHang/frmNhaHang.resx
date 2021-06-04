@@ -118,16 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <metadata name="doanhThuHomNayBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>936, 407</value>
+    <value>563, 249</value>
   </metadata>
   <metadata name="doanhThuThangBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>369, 446</value>
+    <value>367, 246</value>
   </metadata>
   <metadata name="hangTonBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 446</value>
+    <value>178, 254</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnTimKiemNhanVienTheoTen.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnTimKiemNCCTheoTen.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAXVJREFUOE9joDpISkoyTEhIaElMTFwKxJOBOLC+vp4JKo0bhIaGsgEVz0jMKvyX
@@ -139,7 +139,7 @@
         uz91DPEMDJsJFSIduAWEzvYJitSAcikBDAwAxbgdj7sGAZ0AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnTimKiemNhanVienTheoMa.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnTimKiemNCCTheoMa.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAXVJREFUOE9joDpISkoyTEhIaElMTFwKxJOBOLC+vp4JKo0bhIaGsgEVz0jMKvyX
@@ -175,7 +175,7 @@
         uz91DPEMDJsJFSIduAWEzvYJitSAcikBDAwAxbgdj7sGAZ0AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnTimKiemHoaDon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnTimChiTietHoaDon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAXVJREFUOE9joDpISkoyTEhIaElMTFwKxJOBOLC+vp4JKo0bhIaGsgEVz0jMKvyX
@@ -187,7 +187,7 @@
         uz91DPEMDJsJFSIduAWEzvYJitSAcikBDAwAxbgdj7sGAZ0AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnTimKiemLoaiHangTheoten.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnTimKiemNhanVienTheoTen.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAXVJREFUOE9joDpISkoyTEhIaElMTFwKxJOBOLC+vp4JKo0bhIaGsgEVz0jMKvyX
@@ -199,7 +199,7 @@
         uz91DPEMDJsJFSIduAWEzvYJitSAcikBDAwAxbgdj7sGAZ0AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnTimKiemLoaiHangTheoMa.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnTimKiemNhanVienTheoMa.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAXVJREFUOE9joDpISkoyTEhIaElMTFwKxJOBOLC+vp4JKo0bhIaGsgEVz0jMKvyX
@@ -235,7 +235,7 @@
         uz91DPEMDJsJFSIduAWEzvYJitSAcikBDAwAxbgdj7sGAZ0AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnTimKiemNCCTheoTen.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnTimKiemLoaiHangTheoten.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAXVJREFUOE9joDpISkoyTEhIaElMTFwKxJOBOLC+vp4JKo0bhIaGsgEVz0jMKvyX
@@ -247,7 +247,7 @@
         uz91DPEMDJsJFSIduAWEzvYJitSAcikBDAwAxbgdj7sGAZ0AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnTimKiemNCCTheoMa.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnTimKiemLoaiHangTheoMa.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAXVJREFUOE9joDpISkoyTEhIaElMTFwKxJOBOLC+vp4JKo0bhIaGsgEVz0jMKvyX
@@ -259,7 +259,7 @@
         uz91DPEMDJsJFSIduAWEzvYJitSAcikBDAwAxbgdj7sGAZ0AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnTimChiTietHoaDon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnTimKiemHoaDon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAXVJREFUOE9joDpISkoyTEhIaElMTFwKxJOBOLC+vp4JKo0bhIaGsgEVz0jMKvyX
@@ -734,6 +734,6 @@
 </value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>200</value>
+    <value>25</value>
   </metadata>
 </root>
